@@ -17,9 +17,9 @@
 
 6. Create a global variable which is named "winner".
 
-7. Create an if statement to compare **userItem and **appItem and assign winner as "user" or "app" into **winner.
+7. Create an if statement to compare ** userItem and ** appItem and assign winner as "user" or "app" into ** winner.
 
-8. Create an object to store **userItem, **appItem and **winner.
+8. Create an object to store ** userItem, ** appItem and ** winner.
 
 9. Assig 3 variables with the same name as key and value as value.
 
