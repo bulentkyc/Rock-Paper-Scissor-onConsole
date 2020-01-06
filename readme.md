@@ -11,6 +11,13 @@
         3 - Scissor
 
 4. Assign user answer into a variable which is named as "userItem".
+    P.S.: Don't forget, promt always turns back string!
+
+5. Generate a random number between 1-3 and assign into a variable which is named as "appItem".
+
+6. Create a global variable which is named "winner".
+
+7. Create an if block to compare **userItem and **appItem and assign winner as "user" or "app" into **winner.
 
 
 
