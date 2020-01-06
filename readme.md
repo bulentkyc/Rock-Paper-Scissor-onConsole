@@ -21,11 +21,13 @@
 
 8. Create an object to store ** userItem, ** appItem and ** winner.
 
-9. Assig 3 variables with the same name as key and value as value.
+9. Assign 3 variables with the same name as key and value as value.
+    PS.: You should create a function to convert numbers to the game items (rock, paper or  scissor). This function will get a parameter which is a number and turn back the item name.
 
 10. Put this object into an array which is named "games".
 
 13. Create a for loop to play this game 3 times.
 
+14. Make the app flexible with prompts. Ask how many times you have to play.
 
 
