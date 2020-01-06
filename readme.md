@@ -19,6 +19,13 @@
 
 7. Create an if block to compare **userItem and **appItem and assign winner as "user" or "app" into **winner.
 
+8. Create an object to store **userItem, **appItem and **winner.
+
+9. Assig 3 variables with the same name as key and value as value.
+
+10. Put this object into an array which is named "games".
+
+13. Create a for loop to play this game 3 times.
 
 
 
