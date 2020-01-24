@@ -31,6 +31,14 @@
 
     <div id="compose" hidden>
     <form class="container mt-5">
+
+        <div class="form-group">
+            <label for="from">FROM</label>
+
+            <input type="email" class="form-control" id="from" aria-describedby="emailHelp"
+            value="example@example.com">
+        </div>
+
         <div class="form-group">
             <label for="exampleInputEmail1">TO</label>
 
@@ -61,11 +69,19 @@
 </div>
 
 <div id="inbox">
+        <div class="form-group">
+                <label for="from">ACTIVE ACCOUNT</label>
+    
+                <input type="email" class="form-control" id="account" aria-describedby="emailHelp"
+                value="example@example.com">
+            </div>
     <div id="emailList" class="list-group w-25 vh-100 float-left">
         
     </div>
     <div id="messageArea">
-        test message
+        <h5 id="toInfo">To goes here</h5>
+        <h5 id="ccInfo">CC goes here</h5>
+        <p id="messageInfo">Message Text goes here</p>
     </div>
 </div>
 </body>

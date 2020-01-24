@@ -2,6 +2,7 @@ let emails = [];
 
 function sendEmail() {
     let email = {
+        from: document.getElementById('from').value,
         to: document.getElementById('to').value,
         cc: document.getElementById('cc').value,
         subject: document.getElementById('subject').value,
@@ -70,7 +71,15 @@ let screenAct, screenPass, menuItemAct, menuItemPass;
     document.getElementById(menuItemAct).classList.add('active');
     document.getElementById(menuItemPass).classList.remove('active');
 
+
 } */
+
+let showMessage = (id) =>{
+    //console.log(id);
+    document.getElementById('toInfo').innerHTML = 'TO: ' + emails[id].to;
+    document.getElementById('ccInfo').innerHTML = 'CC: ' + emails[id].cc;
+    document.getElementById('messageInfo').innerHTML = 'Meesage: ' + emails[id].message;
+}
 
 function switchScreen(screenAct, screenPass, menuItemAct, menuItemPass) {
     
@@ -83,13 +92,19 @@ function switchScreen(screenAct, screenPass, menuItemAct, menuItemPass) {
         if(screenAct == 'inbox'){
             let currentButton;
             document.getElementById('emailList').innerHTML = '';
-            emails.map(val => {
-                //`<button class="list-group-item list-group-item-action">${val.subject}</button>`
-                currentButton = document.createElement('button');
-                currentButton.classList.add('list-group-item');
-                currentButton.classList.add('list-group-item-action');
-                currentButton.innerHTML = val.subject;
-                document.getElementById('emailList').append(currentButton);
+            emails.map((val, i) => {
+                console.log(val.to, document.getElementById('account').value);
+                if (val.to == document.getElementById('account').value) {
+                    //`<button class="list-group-item list-group-item-action">${val.subject}</button>`
+                    currentButton = document.createElement('button');
+                    currentButton.id = i;
+                    currentButton.setAttribute('onclick',`showMessage(${i})`);
+                    currentButton.classList.add('list-group-item');
+                    currentButton.classList.add('list-group-item-action');
+                    currentButton.innerHTML = val.subject;
+                    document.getElementById('emailList').append(currentButton);
+                }
+                
                 //
                 //
             });
